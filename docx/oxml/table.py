@@ -21,6 +21,7 @@ class CT_Row(BaseOxmlElement):
     """
     ``<w:tr>`` element
     """
+    trPr = ZeroOrOne('w:trPr')
     tc = ZeroOrMore('w:tc')
 
     def _new_tc(self):
